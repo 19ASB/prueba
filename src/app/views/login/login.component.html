@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="container-left">
+        <div id="bienvenido">BIENVENIDO:</div>
+        <div id="creadoPor">CREADO POR: ÁNGEL SORIANO BAÑÓN</div>
+    </div>
+    <div class="container-right">
+        <div id="login">INICIAR SESIÓN</div>
+        <div id="form">
+            <form>
+                <label>CORREO ELECTRÓNICO:</label>
+                <input type="email" name="name" [(ngModel)]="email">
+                <label>CONTRASEÑA:</label>
+                <input [type]="passwordType" name="password" type="password" [(ngModel)]="password">
+            </form>
+            <div id="botones">
+                <button id="mostrar" (click)="mostrar()">{{ showPassword ? "OCULTAR" : "MOSTRAR" }} CONTRASEÑA</button>
+                <button id="iniciarSesion" (click)="login()">INICIAR SESIÓN</button>
+            </div>
+            <div id="registrate">
+                <span>¿NO TIENES CUENTA?&nbsp;<a href="#">REGISTRATE</a></span>
+            </div>
+        </div>
+    </div>
+</div>
